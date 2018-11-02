@@ -1,0 +1,161 @@
+
+.size_minako-plan {
+  padding: 580px 0 0;
+  background: url("../images/photo_back.png") no-repeat top  left -100px;
+  background-size: 980px auto;
+  @include media-query('sp') {
+    padding: 400px 0 0;
+    background-size: 500px auto;
+  }
+}
+
+.plan {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #EDEDE6;
+  padding: 30px;
+  position: relative;
+  &:after {
+    content: '';
+    width: 620px;
+    height: 360px;
+    background: url("../images/photo_main.png") no-repeat top center;
+    background-size: contain;
+    position: absolute;
+    top: -250px;
+    right: -80px;
+    @include media-query('sp') {
+      width: 300px;
+      height: 200px;
+      top: -150px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+  &-inner {
+    background-color: #FEFBFC;
+    padding: 100px 30px 60px 30px;
+    @include media-query('sp') {
+      padding: 60px 20px 30px;
+    }
+  }
+  &-fee {
+    @include font-size(1.1);
+    text-align: center;
+    @include media-query('sp') {
+      @include font-size(1);
+    }
+  }
+  &-desc {
+    @include font-size(0.9);
+    text-align: center;
+  }
+  &-time {
+    width: 310px;
+    margin: 0 auto 100px;
+    padding: 10px 0 0;
+    text-align: center;
+    @include font-size(0.9);
+    border-bottom: 10px solid $color__minako-main;
+    @include media-query('sp') {
+      width: 100%;
+      margin: 0 auto 60px;
+      @include font-size(0.8);
+    }
+  }
+
+
+  &-table {
+    margin: 0 auto 60px;
+    tr {
+      height: 60px;
+    }
+    th {
+      width: 30%;
+      font-weight: normal;
+      vertical-align: top;
+      &:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border-radius: 100%;
+        background: $color__minako-main;
+        position: relative;
+        left: -10px;
+        top: 1px;
+      }
+    }
+    td {
+      width: 70%;
+      vertical-align: top;
+      &:before {
+        content: '';
+        width: 3px;
+        height: 3px;
+        display: inline-block;
+        border-radius: 100%;
+        position: relative;
+        background-color: $color__text-main;
+        left: -5px;
+        top: -5px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+      }
+    }
+    .no-content {
+      &:before {
+        content: none;
+      }
+
+    }
+  }
+
+  &-unit {
+    @include clearfix();
+    width: 100%;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+  &-img-left {
+    width: 50%;
+    float: left;
+  }
+  &-img-right {
+    width: 50%;
+    float: right;
+  }
+
+  &-reserve-btn {
+    display: block;
+    text-align: center;
+    img {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      vertical-align: bottom;
+    }
+    // &-ua {
+    //   margin: 0 auto 10px;
+    //   color: $color__minako-mb;
+    //   letter-spacing: 1px;
+    // }
+    // &-ja {
+    //   margin: 0 auto 5px;
+    //   letter-spacing: 1px;
+    // }
+    // &-img {
+    //   text-align: center;
+    //   vertical-align: bottom;
+    // }
+    // &:hover {
+    //   background-color: $color__minako-mb;
+    //   color: #fff;
+    //   transition: 0.4;
+    // }
+  }
+}

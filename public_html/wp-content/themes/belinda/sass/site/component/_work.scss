@@ -1,0 +1,248 @@
+
+.size_minako-work {
+  padding: 580px 0 0;
+  background: url("../images/work_back.png") no-repeat top  left -100px;
+  background-size: 800px auto;
+  @include media-query('sp') {
+    padding: 500px 0 0;
+    background-size: 450px auto;
+  }
+}
+
+.work {
+  width: 100%;
+  margin: 0 auto;
+  @include bg__minako(0.4);
+  padding: 30px;
+  position: relative;
+  &:after {
+    content: '';
+    width: 620px;
+    height: 360px;
+    background: url("../images/work_main.png") no-repeat top center;
+    background-size: contain;
+    position: absolute;
+    top: -250px;
+    right: -80px;
+    @include media-query('sp') {
+      width: 300px;
+      height: 200px;
+      top: -150px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+  &-inner {
+    background-color: #FFFFFF;
+    padding: 100px 30px 60px 30px;
+    @include media-query('sp') {
+      padding: 60px 20px;
+    }
+  }
+  &-info {
+    @include font-size(1.2);
+    text-align: center;
+  }
+  &-desc {
+    color: $color__minako-main;
+    @include font-size(0.9);
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 45px;
+  }
+  &-text {
+    margin: 0 auto 30px;
+    padding: 10px 0 0;
+    text-align: center;
+    line-height: 2.4;
+    @include font-size(0.9);
+  }
+
+  &-unit {
+    @include clearfix();
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &-left {
+    float: left;
+    @include media-query('sp') {
+      float: none;
+    }
+  }
+  &-right {
+    float: right;
+    @include media-query('sp') {
+      float: none;
+    }
+  }
+
+  &-Profile {
+    margin: 0 auto 50px;
+    background-color: rgba(#D7CDB9, 0.3);
+  }
+  &-ProfileLeft {
+    width: 60%;
+    padding: 50px;
+    @include media-query('sp') {
+      width: 100%;
+      padding: 60px 20px 20px;
+    }
+    h3 {
+      @include font-size(2.2);
+      letter-spacing: 2px;
+      text-align: left;
+      font-weight: normal;
+      font-family: $font__title;
+      margin: -75px 0 20px;
+    }
+    p {
+      margin: 0 auto;
+      text-align: left;
+      line-height: 2;
+    }
+  }
+  &-ProfileRight {
+    width: 40%;
+    @include media-query('sp') {
+      width: 100%;
+    }
+    img {
+      vertical-align: bottom;
+    }
+  }
+  &-Concept {
+
+  }
+  &-ConceptTitle {
+    margin: 0 auto 30px;
+    color: $color__minako-b;
+    @include bg__minako(0.4);
+    padding: 5px 0;
+    @include font-size(1.2);
+    font-weight: normal;
+    text-align: center;
+    @include media-query('sp') {
+      @include font-size(1);
+      padding: 0 10px;
+    }
+  }
+  &-ConceptCatch {
+    text-align: center;
+    line-height: 1.8;
+    margin: 0 auto 30px;
+    span {
+      display: inline-block;
+      padding-top: 30px;
+      @include font-size(1.6);
+    }
+  }
+  &-concept-unit {
+    margin: 0 auto 30px;
+    img {
+      vertical-align: bottom;
+    }
+    .work-left {
+      width: 50%;
+      @include media-query('sp') {
+        width: 100%;
+      }
+    }
+    .work-right {
+      width: 50%;
+      @include media-query('sp') {
+        width: 100%;
+      }
+    }
+  }
+  &-plan {
+    padding: 20px 0 30px;
+    margin: 0 auto 30px;
+    background-color: rgba(#D7CDB9, 0.3);
+    h3 {
+      margin-top: 0;
+      background-color: #fff;
+      text-align: center;
+      font-weight: normal;
+    }
+    p {
+      padding: 0 80px 30px 150px;
+      margin: 0 auto;
+      position: relative;
+      line-height: 1.8;
+      @include media-query('sp') {
+        padding: 100px 20px 0;
+      }
+      &:after {
+        content: '内容';
+        width: 84px;
+        height: 84px;
+        padding: 25px;
+        border: 1px solid $color__minako-b;
+        color: $color__minako-b;
+        position: absolute;
+        top: 0;
+        left: 30px;
+        @include media-query('sp') {
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  &-feature {
+
+  }
+  &-feature-unit {
+    padding: 0 100px;
+    margin: 0 auto 30px;
+    @include media-query('sp') {
+      padding: 0;
+    }
+  }
+  &-feature-img {
+    width: 35%;
+    @include media-query('sp') {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      vertical-align: bottom;
+    }
+  }
+  &-feature-text {
+    padding: 0 0 0 20px;
+    width: 65%;
+    @include media-query('sp') {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  &-feature-title {
+    @include font-size(1.2);
+    padding: 20px 0 0;
+    margin: 0 auto 30px;
+    letter-spacing: 2px;
+    text-align: left;
+    @include media-query('sp') {
+      @include font-size(1);
+    }
+  }
+  &-feature-desc {
+    @include font-size(0.9);
+    line-height: 1.6;
+    text-align: left;
+
+  }
+  &_caption {
+    line-height: 1.8;
+    background-color: rgba(#E4D2CD, 0.2);
+    padding: 30px 50px;
+    @include media-query('sp') {
+      padding: 30px 20px;
+    }
+  }
+
+}

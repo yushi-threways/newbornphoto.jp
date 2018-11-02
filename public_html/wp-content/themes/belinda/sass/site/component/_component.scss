@@ -1,0 +1,47 @@
+
+.pc-only {
+  @include media-query('pc') {
+    display: none;
+  }
+}
+.sp-only {
+  @include media-query('sp') {
+    display: none;
+  }
+}
+
+.size_siet-wrapper {
+  width: $size__site-main;
+  margin: 0 auto;
+}
+
+.size_minako-main {
+  max-width: $size__minako-main;
+  width: $size__site-main;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.size_minako-content {
+  width: 100%;
+  max-width: $size__minako-content;
+  margin: 0 auto;
+
+}
+
+.minako-copy {
+  display: block;
+  text-align: center;
+  padding: 10px 0 ;
+}
+
+
+@import "question.scss";
+@import "plan.scss";
+@import "about.scss";
+@import "work.scss";
+@import "top.scss";
+@import "form.scss";
+@import "check.scss";
+@import "gallery.scss";
+@import "animate.scss";

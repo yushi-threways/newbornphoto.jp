@@ -1,0 +1,264 @@
+
+.top-a-p {
+  padding: 100px 0 0;
+  background: url("../images/top-a-p-back.png") no-repeat top center;
+  background-size: 1600px auto;
+  @include media-query('sp') {
+    background: url("../images/minako_top_about.png") no-repeat top center;
+    background-size: 600px auto;
+  }
+}
+
+.top-p {
+  background: none;
+  @include media-query('sp') {
+    background: url("../images/minako_top_plan.png") no-repeat top center;
+    background-size: 600px auto;
+  }
+}
+
+
+.top-about {
+  padding: 150px 0 0;
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  @include media-query('sp') {
+    padding: 0 20px;
+  }
+}
+
+.top-unit {
+  width: 100%;
+  @include clearfix();
+}
+
+.top-unit-about {
+  margin: 0 auto 100px;
+}
+
+.top-left {
+  float: left;
+  @include media-query('sp') {
+    float: none;
+  }
+}
+.top-right {
+  float: right;
+  @include media-query('sp') {
+    float: none;
+  }
+}
+
+.top-unit-text {
+  width: 50%;
+  text-align: center;
+  padding: 50px 0 0;
+  @include media-query('sp') {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+  h2 {
+    margin: 0 auto 30px;
+  }
+  .top-about-desc {
+    margin: 0 auto 30px;
+    line-height: 2.2;
+  }
+  .top-about-desc-eu {
+    margin: 0 auto 30px;
+    img {
+      max-width: 500px;
+      width: 100%;
+      vertical-align: bottom;
+    }
+  }
+  a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: $color__minako-mb;
+    &:after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: $color__minako-mb;
+      transform: scale(0, 1);
+      transform-origin: left top;
+      transition: transform .3s;
+    }
+    &:hover::after {
+    transform: scale(1, 1);
+    }
+    &:hover {
+
+    }
+  }
+}
+
+.top-unit-img {
+  width: 50%;
+  @include media-query('sp') {
+    width: 100%;
+  }
+  img {
+    vertical-align: bottom;
+  }
+}
+.top-unit-img-left {
+  text-align: left;
+  padding: 0 30px 0 0;
+  @include media-query('sp') {
+    padding: 0;
+  }
+
+}
+
+.top-unit-img-right {
+  text-align: right;
+  padding: 0 0 0 30px;
+  @include media-query('sp') {
+    padding: 0;
+  }
+}
+
+.top-photo {
+  padding: 300px 0 100px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  @include media-query('sp') {
+    padding: 100px 20px;
+  }
+}
+
+.top-gallery {
+  padding: 100px 0 0;
+  background: url("../images/top-g-back.png") no-repeat top center;
+  background-size: 1000px auto;
+  @include media-query('sp') {
+    background-size: 500px auto;
+  }
+  p {
+    display: block;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 150px 0 0;
+    line-height: 2;
+    @include media-query('sp') {
+      position: unset;
+      padding: 0;
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      color: $color__minako-mb;
+      text-decoration: none;
+      @include font-size(0.8);
+      &:after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: $color__minako-mb;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+      }
+      &:hover::after {
+      transform: scale(1, 1);
+      }
+    }
+  }
+  &-inner {
+    padding: 170px 0 0;
+    height: 920px;
+    position: relative;
+    @include media-query('sp') {
+      height: unset;
+    }
+  }
+  ul {
+    max-width: 880px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    .top-gallery-list {
+      width: 280px;
+      height: 280px;
+      position: absolute;
+      @include media-query('sp') {
+        position: unset;
+        margin: 0 auto 20px;
+      }
+    }
+    .top-gallery-list-1 {
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      @include media-query('sp') {
+        margin: 0 auto 20px;
+      }
+    }
+    .top-gallery-list-2 {
+      top: 150px;
+      right: 0;
+    }
+    .top-gallery-list-3 {
+      bottom: 50px;
+      right: 0;
+    }
+    .top-gallery-list-4 {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      @include media-query('sp') {
+        margin: 0 auto 20px;
+      }
+    }
+    .top-gallery-list-5 {
+      bottom: 50px;
+      left: 0;
+    }
+    .top-gallery-list-6 {
+      top: 150px;
+      left: 0;
+    }
+    .top-gallery-list-img {
+      overflow: hidden;
+      position: relative;
+      width: 280px;
+      height: 280px;
+      img {
+        vertical-align: bottom;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        max-width: 150%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}
