@@ -1,0 +1,252 @@
+
+.minako-form {
+  &-inner {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 100px;
+    position: relative;
+    background: url("../images/require.png") no-repeat top 30px right 20px;
+    background-size: 90px auto;
+    @include media-query('sp') {
+      padding: 60px 20px;
+    }
+  }
+}
+
+.form-group {
+  width: 100%;
+  margin: 0 0 15px;
+  @include clearfix();
+  label {
+    float: left;
+    width: 30%;
+    text-align: left;
+    padding: 0 20px 0 0;
+    line-height: 35px;
+    @include media-query('sp') {
+      float: none;
+      width: 100%;
+      line-height: unset;
+    }
+  }
+  .require {
+    background: url("../images/kome.png") no-repeat top right 7px;
+  }
+  p {
+    display: none;
+  }
+  .form-width {
+    float: left;
+    width: 70%;
+    padding: 0 10px;
+    @include media-query('sp') {
+      float: none;
+      width: 100%;
+    }
+    input {
+      width: 400px;
+      line-height: 35px;
+      border: 1px solid $color__minako-mb;
+      @include media-query('sp') {
+        width: 100%;
+
+      }
+    }
+    textarea {
+      width: 400px;
+      line-height: 35px;
+      border: 1px solid $color__minako-mb;
+      @include media-query('sp') {
+        width: 100%;
+      }
+    }
+    .form-width-none {
+      width: unset;
+    }
+  }
+}
+
+.form-wrapper {
+  width: 100%;
+  margin: 0 0 15px;
+  @include clearfix();
+  line-height: 35px;
+  &-input {
+    width: 70%;
+    float: left;
+    @include media-query('sp') {
+      width: 100%;
+      float: none;
+    }
+  }
+  p {
+    display: none;
+  }
+  &-text {
+    width: 30%;
+    text-align: right;
+    padding: 0 20px 0 0;
+    line-height: 35px;
+    float: left;
+    @include media-query('sp') {
+      width: 100%;
+      float: none;
+      padding: 0;
+    }
+  }
+  .form-group {
+    label {
+      width: 20%;
+      text-align: left;
+      @include media-query('sp') {
+        width: 100%;
+      }
+    }
+    .form-width {
+      width: 80%;
+      @include media-query('sp') {
+        width: 100%;
+      }
+      input {
+        width: 300px;
+        @include media-query('sp') {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 2px solid $color__minako-main !important;
+}
+
+.ui-datepicker {
+  padding: 10px;
+  border: 10px solid $color__minako-main;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.form-group-btn {
+  text-align: center;
+  margin: 60px auto 30px;
+  .form-submit {
+    padding: 20px 60px;
+    outline: none;
+    border: none;
+    background-color: $color__minako-mb;
+    color: #fff;
+    @include font-size(1);
+  }
+}
+
+
+// reserve
+
+.size_minako-reserve {
+  padding: 280px 0 0;
+  background: url("../images/reserve_back.png") no-repeat top  left -100px;
+  background-size: 980px auto;
+  @include media-query('sp') {
+    padding: 180px 0 0;
+    background-size: 500px auto;
+  }
+}
+
+.reserve {
+
+  &-inner {
+    h2 {
+      text-align: center;
+      font-weight: normal;
+      color: $color__minako-mb;
+      margin: 0 auto 30px;
+    }
+    .reserve-desc {
+      text-align: center;
+      margin: 0 auto 30px;
+      @include media-query('sp') {
+        padding: 0 20px;
+      }
+    }
+    .reserve-flow {
+      text-align: center;
+      margin: 0 auto 30px;
+      img {
+        vertical-align: bottom;
+      }
+    }
+    .reserve-info {
+      width: 630px;
+      margin: 0 auto 45px;
+      padding: 5px 0;
+      @include font-size(0.9);
+      background-color: $color__minako-main;
+      text-align: center;
+      @include media-query('sp') {
+        width: 100%;
+        padding: 5px 20px;
+      }
+    }
+    .reserve-caption {
+      text-align: center;
+      margin: 0 auto 45px;
+      @include media-query('sp') {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+.reserve-form {
+  &-inner {
+    @include bg__minako(0.2);
+  }
+  h2 {
+    margin: 0 auto 60px;
+  }
+
+}
+
+// contact
+
+.size_minako-contact {
+  padding: 280px 0 0;
+  background: url("../images/contact_back.png") no-repeat top  left -100px;
+  background-size: 1600px auto;
+  @include media-query('sp') {
+    padding: 180px 0 0;
+    background-size: 800px auto;
+  }
+}
+
+.contact {
+
+  &-inner {
+    h2 {
+      text-align: center;
+      font-weight: normal;
+      color: $color__minako-mb;
+      margin: 0 auto 30px;
+    }
+    .contact-desc {
+      text-align: center;
+      margin: 0 auto 45px;
+      @include media-query('sp') {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+.contact-form {
+  &-inner {
+    background-color: $color__minako-main;
+  }
+  h2 {
+    margin: 0 auto 60px;
+  }
+
+}

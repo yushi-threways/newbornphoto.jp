@@ -1,0 +1,20 @@
+a {
+	color: $color__text-main;
+
+	&:visited {
+		color: $color__text-main;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__text-main;
+		opacity: 0.7;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

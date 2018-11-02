@@ -1,0 +1,123 @@
+
+.size_minako-question {
+  padding: 100px 0 0;
+  background: url("../images/qa_back.png") no-repeat top center;
+  background-size: cover;
+  @include media-query('sp') {
+    background-size: 600px auto;
+    padding: 60px 0 0;
+  }
+}
+
+.ques-about {
+  @include clearfix();
+  width: 100%;
+  margin: 0 auto 100px;
+  padding: 150px 0 0;
+  @include media-query('sp') {
+    padding: 100px 0 0;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+  }
+  &-left {
+    width: 40%;
+    margin: 0 auto;
+    float: left;
+    @include media-query('sp') {
+      width: 100%;
+      float: none;
+    }
+    ul {
+      margin: 0;
+      padding: 200px 0 0 30px;
+      @include media-query('sp') {
+        padding: 100px 0 0 0;
+      }
+      li {
+        padding: 5px 0;
+      }
+    }
+  }
+  &-right {
+    width: 60%;
+    margin: 0 auto;
+    float: right;
+    @include media-query('sp') {
+      width: 100%;
+      float: none;
+    }
+    img {
+      max-width: 100%;
+      padding: 0 0 0 30px;
+      vertical-align: bottom;
+      @include media-query('sp') {
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+.ques-reserve {
+  h3 {
+    font-weight: normal;
+    border: 2px solid $color__minako-lb;
+    padding: 5px 0 5px 20px;
+    margin: 0 auto 60px;
+    @include media-query('sp') {
+      @include font-size(0.9);
+    }
+  }
+}
+
+.ques-photo {
+  h3 {
+    font-weight: normal;
+    background-color: #D7CDB9;
+    padding: 5px 0 5px 20px;
+    margin: 100px auto 60px;
+    @include media-query('sp') {
+      @include font-size(0.9);
+    }
+  }
+}
+
+.ques-payment {
+  h3 {
+    font-weight: normal;
+    @include bg__minako(0.6);
+    padding: 5px 0 5px 20px;
+    margin: 100px auto 60px;
+  }
+}
+
+.ques-box {
+  width: 100%;
+  margin: 0 auto 60px;
+  @include media-query('sp') {
+    padding: 0 20px;
+  }
+  &-q {
+    margin: 0 auto 10px;
+    color: $color__minako-mb;
+    padding: 10px 0 10px 60px;
+    background: url("../images/ques_q@2x.png") no-repeat left center;
+    background-size: contain;
+    @include media-query('sp') {
+      background-size: 30px auto;
+    }
+
+  }
+  &-a {
+    padding: 10px 0 10px 60px;
+    background: url("../images/ques_a@2x.png") no-repeat left top 10px;
+    background-size: 20px auto;
+  }
+  hr {
+    width: 320px;
+    height: 2px;
+    margin: 0;
+    background: url("../images/hr.png") no-repeat left top;
+    background-size: contain;
+  }
+}

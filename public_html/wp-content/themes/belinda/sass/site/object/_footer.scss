@@ -1,0 +1,96 @@
+
+.site-footer {
+  margin: 100px auto 0;
+}
+
+.foot-unit {
+  @include clearfix();
+  width: $size__site-main;
+  margin: 0 auto;
+  .foot-arrow {
+    margin: 0 auto;
+    width: 150px;
+    .foot-arrow--inner {
+      text-align: center;
+      width: 0;
+      overflow: hidden;
+      // transition: 1000ms linear;
+    }
+  }
+  .foot-arrow--inner.is-show {
+    width: 150px;
+}
+}
+
+.foot-reserve {
+  padding: 100px 0;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  float: left;
+  text-decoration: none;
+  @include bg__minako(0.4);
+  &--inner {
+    text-align: center;
+    @include font-size(0.9);
+    p {
+      letter-spacing: 1px;
+    }
+  }
+  &--ua {
+    margin: 0 auto 10px;
+    color: $color__minako-b;
+
+  }
+  &--ja {
+    margin: 0 auto;
+    color: $color__text-main;
+  }
+}
+
+.foot-contact {
+  padding: 100px 0;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  float: right;
+  text-decoration: none;
+  @include bg__minako(0.6);
+  &--inner {
+    @include font-size(0.9);
+    text-align: center;
+    p {
+      letter-spacing: 1px;
+    }
+  }
+  &--ua {
+    margin: 0 auto 10px;
+    color: $color__minako-b;
+  }
+  &--ja {
+    margin: 0 auto;
+    color: $color__text-main;
+  }
+}
+
+.pagetop {
+
+}
+.pagetop {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 100;
+  a {
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: url("../images/unker.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      &:hover {
+        opacity: 0.6;
+      }
+  }
+}
